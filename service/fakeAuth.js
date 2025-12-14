@@ -12,7 +12,7 @@ function logout() {
   if (window.location.pathname.includes("/dashboard/")) {
     window.location.replace("../auth/login.html");
   } else {
-    window.location.replace("/auth/login.html");
+    window.location.replace("auth/login.html");
   }
 }
 
