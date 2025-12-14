@@ -43,5 +43,9 @@ form.addEventListener("submit", function (e) {
 
   alert("Cadastro realizado com sucesso!");
   form.reset();
-  window.location.href = "login.html";
+  
+  // Redirecionamento mais robusto
+  setTimeout(() => {
+    window.location.href = "./login.html";
+  }, 100);
 });
