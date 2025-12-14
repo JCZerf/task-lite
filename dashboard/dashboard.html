@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskLite - Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="dashboard-header">
+        <h1>TaskLite</h1>
+        <div class="user-info">
+          <button
+            id="test-notification-btn"
+            class="test-notification-button"
+            title="Testar notificação"
+          >
+            🔊
+          </button>
+          <a
+            href="task-manager.html"
+            class="task-manager-button"
+            title="Ver tarefas completadas"
+          >
+            Minhas Tarefas
+          </a>
+          <span id="user-email" class="user-email"></span>
+          <button id="logout-btn" class="logout-button">Sair</button>
+        </div>
+      </header>
+      <div class="add-task">
+        <input type="text" id="new-task-input" placeholder="Nova tarefa..." />
+        <button id="add-task-btn">Adicionar</button>
+      </div>
+      <div class="tasks" id="tasks-list"></div>
+      <div class="pomodoro">
+        <h2>Pomodoro</h2>
+        <label for="pomodoro-timer" style="color: var(--cor-primaria)"
+          >Minutos:</label
+        >
+        <input
+          type="number"
+          id="pomodoro-time-input"
+          min="1"
+          max="60"
+          value="25"
+          style="width: 60px; margin-bottom: 8px"
+        />
+        <div class="pomodoro-timer" id="pomodoro-timer">25:00</div>
+        <div class="pomodoro-controls">
+          <button id="start-pomodoro">Iniciar</button>
+          <button id="pause-pomodoro">Pausar</button>
+          <button id="reset-pomodoro">Resetar</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/js/dashboard.js"></script>
+    <script src="/service/fakeAuth.js"></script>
+  </body>
+</html>
