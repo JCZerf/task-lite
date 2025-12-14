@@ -38,7 +38,7 @@ form.addEventListener("submit", function (e) {
     return;
   }
 
-  users.push({ email, password, termsAccepted });
+  users.push({ email, password: fakeHash(password), termsAccepted });
   localStorage.setItem("users", JSON.stringify(users));
 
   alert("Cadastro realizado com sucesso!");

@@ -1,71 +1,78 @@
 # TaskLite
 
-Um aplicativo web simples e prático para gerenciamento de tarefas.
+Aplicativo web para gerenciamento de tarefas com timer Pomodoro integrado.
 
-## 📝 Sobre o Projeto
+## Sobre o Projeto
 
-O TaskLite é uma aplicação web para criação e organização de listas de tarefas personalizadas. Foi desenvolvido para ser simples, rápido e prático, ajudando você a manter o foco no que realmente importa.
+TaskLite é uma aplicação frontend para organização de tarefas e produtividade. Inclui sistema de autenticação local, gerenciamento de tarefas e timer Pomodoro com sincronização automática.
 
-## ✨ Características
+## Funcionalidades
 
-- ✅ **Simples** - Interface limpa e intuitiva
-- ⚡ **Rápido** - Carregamento rápido e responsivo
-- 📱 **Multiplataforma** - Funciona em qualquer dispositivo
+- Sistema de login e cadastro (armazenamento local)
+- Criação e organização de tarefas
+- Timer Pomodoro com sincronização automática
+- Sincronização em segundo plano para dispositivos móveis
+- Interface responsiva para todos os dispositivos
+- Estatísticas de produtividade
 
-## 🚀 Como usar
+## Acesso Online
 
-1. Acesse a página inicial
-2. Faça login ou crie uma conta gratuita
-3. Comece a organizar suas tarefas
+https://jczerf.github.io/task-lite/
 
-## 🌐 Demonstração
-
-Você pode acessar o projeto online através do GitHub Pages:
-[https://jczerf.github.io/task-lite/](https://jczerf.github.io/task-lite/)
-
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias
 
 - HTML5
 - CSS3
-- JavaScript Vanilla
+- JavaScript (Vanilla)
+- LocalStorage para persistência de dados
 
-## 📂 Estrutura do Projeto
+## Timer Pomodoro
+
+O timer Pomodoro possui sincronização automática que resolve problemas comuns em dispositivos móveis:
+
+- Armazena timestamp de início no localStorage
+- Sincroniza automaticamente quando a aplicação volta do segundo plano
+- Calcula tempo decorrido com precisão
+- Notificações visuais e sonoras
+- Estatísticas de sessões completadas
+
+## Estrutura do Projeto
 
 ```
 TaskLite/
-├── index.html              # Página inicial
+├── index.html
 ├── auth/
-│   ├── login.html          # Página de login
-│   └── registration.html   # Página de cadastro
+│   ├── login.html
+│   └── registration.html
+├── dashboard/
+│   ├── dashboard.html
+│   └── taskManager.html
 ├── css/
-│   ├── index.css          # Estilos da página inicial
-│   ├── login.css          # Estilos da página de login
-│   └── registration.css   # Estilos da página de cadastro
-└── js/
-    ├── menu.js            # Navegação do menu
-    └── registration.js    # Funcionalidades de cadastro
+│   ├── index.css
+│   ├── login.css
+│   ├── registration.css
+│   ├── dashboard.css
+│   ├── footer.css
+│   ├── taskManager.css
+│   └── pomodoro.css
+├── js/
+│   ├── menu.js
+│   ├── login.js
+│   ├── registration.js
+│   ├── dashboard.js
+│   ├── taskManager.js
+│   └── pomodoro.js
+└── service/
+    ├── fakeAuth.js
+    └── fakeHash.js
 ```
 
-## 🚀 Como executar localmente
+## Execução Local
 
-1. Clone o repositório:
+1. Clone o repositório
+2. Abra o arquivo index.html em um navegador
+3. Ou execute um servidor HTTP local na pasta do projeto
 
-```bash
-git clone https://github.com/JCZerf/task-lite.git
-```
+## Licença
 
-2. Navegue até a pasta do projeto:
-
-```bash
-cd task-lite
-```
-
-3. Abra o arquivo `index.html` em seu navegador ou use um servidor local.
-
-## 📄 Licença
-
-Este projeto está sob licença MIT.
-
----
-
-Desenvolvido por [JCZerf](https://github.com/JCZerf)
+Projeto de código aberto para fins educacionais.
