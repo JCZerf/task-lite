@@ -1,0 +1,71 @@
+:root {
+  --cor-primaria: DarkOrange;
+  --cor-fundo: rgb(10, 18, 25);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--cor-fundo);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 32px;
+
+  background-color: rgb(18, 42, 60);
+  border-radius: 14px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-box h1 {
+  color: var(--cor-primaria);
+  text-align: center;
+}
+
+.auth-box p {
+  color: rgb(180, 200, 215);
+  text-align: center;
+  font-size: 15px;
+}
+
+.list-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.item-list {
+  border: 1px solid var(--cor-primaria);
+  border-radius: 8px;
+
+  padding: 8px 12px;
+
+  font-size: 14px;
+  color: var(--cor-primaria);
+}
+
+button {
+  margin-top: 16px;
+
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+
+  background-color: var(--cor-primaria);
+  color: rgb(10, 18, 25);
+
+  font-weight: bold;
+  cursor: pointer;
+}

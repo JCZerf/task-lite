@@ -1,0 +1,100 @@
+:root {
+  --cor-primaria: DarkOrange;
+  --cor-fundo: rgb(10, 18, 25);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--cor-fundo);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form p {
+  font-size: 14px;
+  color: rgb(180, 200, 215);
+  margin-top: 12px;
+}
+
+a {
+  font-size: 14px;
+  color: rgb(180, 200, 215);
+  text-decoration: underline;
+}
+
+.form-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+  padding: 100px;
+
+  color: var(--cor-primaria);
+  background-color: rgb(18, 42, 60);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+
+.form input {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  background-color: rgb(12, 22, 30);
+  color: #fff;
+
+  border: 1px solid rgb(40, 70, 90);
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+
+.form input::placeholder {
+  color: rgb(150, 170, 185);
+}
+
+.form input:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 2px rgba(255, 140, 0, 0.3);
+}
+
+.form button {
+  width: 116%;
+  margin-top: 8px;
+
+  padding: 12px;
+
+  background-color: var(--cor-primaria);
+  color: rgb(10, 18, 25);
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 140, 0, 0.4);
+}
+
+.form button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
